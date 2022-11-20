@@ -1,7 +1,10 @@
 # Ensayos usando Flask
 
 A continuación se van a ir realizando tareas como las mostradas a continuación:
-
+* [ ] Crear un ejemplo simple de flask.
+* [ ] Modificar el ejemplo mejorandolo un poco.
+* [ ] Hacer una aplicación sencilla con una API.
+* [ ] Mejorar la aplicación 
 
 ## Referencias
 
