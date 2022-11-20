@@ -6,6 +6,15 @@ A continuación se van a ir realizando tareas como las mostradas a continuación
 * [ ] Hacer una aplicación sencilla con una API.
 * [ ] Mejorar la aplicación 
 
+## Ejemplo 1
+
+
+Ejemplo ejecutando usando flask en un entorno virtual en python. [link](example1/README.md)
+
+## Ejemplo 2
+
+Ejemplo usando dockerizando el ejemplo uno. Pendiente.
+
 ## Referencias
 
 1. https://midu.dev/buenas-practicas-escribir-commits-git/
