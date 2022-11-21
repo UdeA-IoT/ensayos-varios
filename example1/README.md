@@ -1,38 +1,65 @@
 # Ejemplo 1
 
-Aplicación de Hola mundo usando flask en linea de comandos.
+## Antes de empezar
 
-* **Configuración del entorno de trabajo**: solo se hace una vez despues de descargadas totas las fuentes necesarias:
+### Configuración del entorno de desarrollo
+Una vez se descarge el repositorio es necesario ingresar al directorio en el que se aloja el proyecto ```example1``` y se configura el entorno de trabajo siguiendo los siguientes pasos:
 
   ```bash
   cd example1
   python3 -m venv env
   source env/bin/activate   # venv\Scripts\activate (windows)
   pip3 install -r requirements.txt
+  pip3 freeze               # Lista de requerimientos instalados
+  deactivate                # Salir del entorno virtual 
   ```
+El procedimiento anterior solo es necesario realizarlo una sola vez en caso de no necesitar instalar mas cosas.  
 
-* **Despues de configurar el entorno**: Cada vez que se vaya a trabajar en el ejemplo, es necesario activar el entorno virtual.
+## Trabajo en el proyecto
+
+Cada vez que inicie el proyecto, siga los siguientes pasos:
+
+1. **Activar el entorno virtual**: Lo cual se hace ejecutando el siguiente comando
   
   ```bash
   source env/bin/activate # venv\Scripts\activate (windows)
   ```
 
-* **Ejecución de la aplicación**: Despues de activar el entorno virtual puede correr la aplicación. 
-  
-  ```bash
-  export FLASK_APP="hello.py" # Windows (pwsh)> $env:FLASK_APP="hello.py"
-                              # Windows (cmd)> set FLASK_APP="hello.py"
-  
-  flask run 
-  ```
+2. **Configure las variables de entorno**: Al ser un proyecto Flask, se recomienda que defina las siguientes variables de entorno. La siguiente tabla muestra los comandos para el caso para Linux y Windows:
 
-* **Desactivar el entorno virtual**: Cuando se va a dejar de trabajar en el entorno virtual.
-  
-  ```bash
-  dactivate # Funciona tambien en windows
-  ```
+   |Variable|Valor|Linux|Windows (pwsh)|Windows (cmd)|
+   |---|---|---|---|---|
+   |```FLASK_APP```|"main.py"|```export FLASK_APP="main.py"```<br>```echo $FLASK_APP```|```$env:FLASK_APP="main.py"```<br>```$env:FLASK_APP```|```set FLASK_APP="main.py"```<br>```echo %FLASK_APP%```|
+   |```FLASK_DEBUG```|1|```export FLASK_APP="main.py"```<br>```echo $FLASK_APP```|```$env:FLASK_DEBUG=1``` <br>```$env:FLASK_DEBUG```|```set FLASK_DEBUG=1```<br>```echo %FLASK_DEBUG%```|
+   
+   Por ejemplo si se esta en una maquina linux, despues de haber iniciado el entorno, los comandos de configuración para las variables de entorno serian:
+   
+   ```bash
+   export FLASK_APP="main.py" 
+   echo $FLASK_APP
+   export FLASK_DEBUG=1 
+   echo $FLASK_DEBUG 
+   ```
 
+3. **Codifique, haga cambios y pruebe**: Despues de hacer los cambios en el archivo inicie el servidor (**Nota**: Si activa el debug con una vez que lo inicie hay pues los cambios en los programas se veran reflejados):
+   
+   * **Iniciar el servidor**: Para las pruebas.
+     
+     ```bash
+     flask run
+     ```
 
+   * **Finalizar el servidor**: Cuando ya va a dejar de trabajar.
+     
+     ```bash
+     CTRL+Z
+     ```
+
+4. **Desactivar el entorno virtual**: Para salir del entorno virtual se ejecuta el comando.
+   
+   ```bash
+   dactivate # Funciona tambien en windows
+   ```
 
 
 ## Enlaces de utilidad
