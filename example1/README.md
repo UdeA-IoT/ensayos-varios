@@ -66,3 +66,6 @@ Cada vez que inicie el proyecto, siga los siguientes pasos:
 
 * [Environment Variables in Windows/macOS/Linux](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html#:~:text=2.2%20Set%2FUnset%2FChange%20an,it%20to%20an%20empty%20string.)
 * [about_Environment_Variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3)
+* [jinja](https://jinja.palletsprojects.com/en/3.1.x/)
+* [Example list of first words to use in a git commit title](https://gist.github.com/scmx/411f6fea4ee3832806720d536a7d5d8f)
+
