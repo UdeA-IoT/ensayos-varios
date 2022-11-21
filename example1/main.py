@@ -1,10 +1,19 @@
 
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, make_response, redirect
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    client_ip = request.remote_addr
-    # return 'Hello, World! to {}'.format(client_ip)
-    return render_template("hello.html", client_ip = client_ip)
+def index():
+    
+    #response = make_response(redirect('/index'))
+    response = render_template('base.html')
+    return response
+
+@app.route('/index')
+def home():
+    context = {
+        'client_ip': request.remote_addr
+    }
+    return render_template('index.html', **context)
+    
