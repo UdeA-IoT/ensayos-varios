@@ -1,0 +1,24 @@
+{# templates/base.html #}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Led Control
+        {% endblock title %}
+    </title>
+</head>
+
+<body>
+    <header>
+        {% include "_navigation.html" %}
+    </header>
+    {% block content %}
+    Contenido de prueba
+    {% endblock content %}
+</body>
+
+</html>
