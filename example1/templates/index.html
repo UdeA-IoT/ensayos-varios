@@ -1,0 +1,12 @@
+{# templates/index.html #}
+
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} | UdeA
+{% endblock %}
+
+{% block content %} 
+  <h1>Control de Leds</h1>
+  Bienvenido, tu IP es {{ client_ip }}
+{% endblock content%}
