@@ -1,5 +1,33 @@
-# Ensayos usando Flask
+# Proyecto 1
 
+## Descripción
+
+Controlar de manera remota un led conectado a un arduino de manera serial
+
+## Fases
+
+### Fase 1
+
+* **link**: [fase1](./fase1/README.md) 
+
+### Fase 2
+
+* **link**: [fase2](./fase2/README.md) 
+
+### Fase 3
+
+* **link**: [fase3](./fase3/README.md) 
+
+### Fase 4
+
+* **link**: [fase4](./fase4/README.md) 
+
+### Fase 5
+
+Integración y mejora.
+
+
+<!--
 
 # Ejemplo 1
 
@@ -98,3 +126,4 @@ Ejemplo usando dockerizando el ejemplo uno. Pendiente.
 8. https://www.freecodecamp.org/news/git-best-practices-commits-and-code-reviews/
 9. https://www.gitkraken.com/learn/git/best-practices/git-commit-message
 
+-->
