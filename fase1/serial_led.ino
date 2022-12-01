@@ -1,23 +1,3 @@
-
-# Fase 1
-
-## Descripción 
-
-Control de arduino usando el serial
-
-|Comando|Descripción|
-|---|---|
-|```0```|Apagar led|
-|```1```|Encender led|
-
-### Software
-
-### Requisitos
-
-1. Tener instalado el arduino
-2. Arduino.
-
-```C
 // Commands
 #define ON '1'
 #define OFF '0'
@@ -44,17 +24,3 @@ void loop() {
     }
   }
 }
-```
-
-### Hardware
-
-Agregar imagen (pnf, archivo fritzing, simulacion en tinkercad)
-
-## Pruebas
-
-ToDo
-
-## Enlaces
-
-1. [Writing a Good Git Commit Message](https://www.gitkraken.com/learn/git/best-practices/git-commit-message)
-2. [Git commit message](https://github.com/knowbl/git-commit-message)
