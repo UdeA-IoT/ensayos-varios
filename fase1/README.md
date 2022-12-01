@@ -12,6 +12,10 @@ Control de arduino usando el serial
 
 ### Software
 
+### Requisitos
+
+1. Tener instalado el arduino
+2. Arduino.
 
 ```C
 // Commands
@@ -46,6 +50,11 @@ void loop() {
 
 Agregar imagen (pnf, archivo fritzing, simulacion en tinkercad)
 
+## Pruebas
+
+ToDo
+
 ## Enlaces
 
-
+1. [Writing a Good Git Commit Message](https://www.gitkraken.com/learn/git/best-practices/git-commit-message)
+2. [Git commit message](https://github.com/knowbl/git-commit-message)
